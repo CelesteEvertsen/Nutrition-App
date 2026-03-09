@@ -10,6 +10,7 @@
   display: grid;
   background: rgb(178, 230, 203);
   color: #fff;
+  position: relative;
 }
 
 /* .flower-2{
@@ -29,14 +30,27 @@
   top: 27%;
 } */
 .vanilla{
-    width: 150px;
+  width: 150px;
   height: 150px;
   display: block;
   position: absolute;
   filter: opacity(30%);
-   left:36%;
-  top: 30%;
-}/* 
+  left: 30%;
+  top: 38%;
+ z-index: 1; transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .vanilla {
+    width: 120px;
+    height: 120px;
+    left: 18%;
+    top: 31%;
+  }
+}
+
+/* 
 span {
   width: 90px;
   height: 90px;

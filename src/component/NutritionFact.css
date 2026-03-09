@@ -1,6 +1,7 @@
 .nutrition {
   place-self: center;
   padding: 40px;
+  width: min(92vw, 920px);
   border-radius: 10px;
   background-image: linear-gradient(45deg, darkgreen, lightgreen);
   display: flex;
@@ -52,6 +53,7 @@
   margin-top: 30px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 
   .col {
     display: flex;
@@ -59,12 +61,61 @@
     line-height: 1.5;
     border-right: 1px solid white;
     padding-right: 20px;
+    min-width: 180px;
+    flex: 1 1 0;
     span {
       display: block;
       font-weight: bold;
     }
   }
-  .col:last-child{
+  .col:last-child {
     border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nutrition {
+    width: min(96vw, 560px);
+    padding: 22px 16px;
+    border-radius: 12px;
+  }
+
+  .nutrition .searchbar {
+    margin-top: 8px;
+  }
+
+  .nutrition .searchbar input {
+    font-size: 16px;
+    height: 46px;
+  }
+
+  .nutrition .searchbar img {
+    width: 46px;
+    padding: 12px;
+    flex-shrink: 0;
+  }
+
+  .food-item {
+    font-size: 21px;
+  }
+
+  .container {
+    gap: 14px;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .container .col {
+    width: 100%;
+    min-width: 0;
+    padding-right: 0;
+    padding-bottom: 12px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  }
+
+  .container .col:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
