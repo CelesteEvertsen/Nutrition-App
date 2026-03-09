@@ -1,14 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
-
+  font-family: "DM Sans", sans-serif;
 }
-.app{
+.app {
   min-height: 100vh;
   display: grid;
   background: rgb(178, 230, 203);
   color: #fff;
 }
+
+/* .flower-2{
+  position:absolute;
+  color:rgb(231, 149, 241);
+  width: 50px;
+  height: 50px;
+  left:35.2%;
+  top: 27%;
+}
+.flower-3{
+  position:absolute;
+  color:rgb(231, 149, 241);
+  width: 50px;
+  height: 50px;
+  left:35.2%;
+  top: 27%;
+} */
+.vanilla{
+    width: 150px;
+  height: 150px;
+  display: block;
+  position: absolute;
+  filter: opacity(30%);
+   left:36%;
+  top: 30%;
+}/* 
+span {
+  width: 90px;
+  height: 90px;
+  display: block;
+  position: absolute;
+  border: 5px solid #0f0f;
+  filter: opacity(30%);
+}
+.first {
+  left:37%;
+  top: 30%;
+  border-radius: 0px 100px 0px 100px;
+}
+.second {
+  left:40%;
+  top:27%;
+  transform: rotate(45deg);
+  border-radius: 0px 100px 0px 100px;
+}
+.third{
+  left:43%;
+  top:30%;
+   border-radius: 100px 0px 100px 0px;
+}
+.fourth{
+  top:37%;
+  left:37%;
+   transform: rotate(-60deg);
+   border-radius: 0px 100px 0px 100px;
+}
+.fifth{
+  top:36%;
+  left:42%;
+  border-radius: 0px 100px 0px 100px;
+  transform: rotate(-15deg);
+ 
+}
+.sixth{
+  top:40%;
+  left:40%;
+  border-radius: 0px 100px 0px 100px;
+  transform: rotate(40deg);
+}
+
+ */

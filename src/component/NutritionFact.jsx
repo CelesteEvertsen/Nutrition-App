@@ -53,20 +53,20 @@ export default function NutritionFact() {
 
         <div className="container">
           <div className="col">
-            <span>Energy</span>
+            <h4>Energy</h4>
             <p>Calories: {Math.floor(firstItem?.calories ?? 0)} kcal</p>
             <p>Serving size: {Math.floor(firstItem?.serving_size_g ?? 0)}g</p>
           </div>
 
           <div className="col">
-            <span>Macros</span>
+            <h4>Macros</h4>
             <p>Protein: {Math.floor(firstItem?.protein_g ?? 0)}g</p>
             <p>Carbohydrates: {Math.floor(firstItem?.carbohydrates_total_g ?? 0)}g</p>
             <p>Fat: {Math.floor(firstItem?.fat_total_g ?? 0)}g</p>
             <p>Fiber: {Math.floor(firstItem?.fiber_g ?? 0)}g</p>
           </div>
           <div className="col">
-            <span>Micro</span>
+            <h4>Micro</h4>
             <p>Potassium: {Math.floor(firstItem?.potassium_mg ?? 0)}mg</p>
           </div>
         </div>
